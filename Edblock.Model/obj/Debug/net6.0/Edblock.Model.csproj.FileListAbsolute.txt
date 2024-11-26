@@ -1,0 +1,11 @@
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.Model\bin\Debug\net6.0\Edblock.Model.deps.json
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.Model\bin\Debug\net6.0\Edblock.Model.dll
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.Model\bin\Debug\net6.0\Edblock.Model.pdb
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.Model\obj\Debug\net6.0\Edblock.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.Model\obj\Debug\net6.0\Edblock.Model.AssemblyInfoInputs.cache
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.Model\obj\Debug\net6.0\Edblock.Model.AssemblyInfo.cs
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.Model\obj\Debug\net6.0\Edblock.Model.csproj.CoreCompileInputs.cache
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.Model\obj\Debug\net6.0\Edblock.Model.dll
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.Model\obj\Debug\net6.0\refint\Edblock.Model.dll
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.Model\obj\Debug\net6.0\Edblock.Model.pdb
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.Model\obj\Debug\net6.0\ref\Edblock.Model.dll

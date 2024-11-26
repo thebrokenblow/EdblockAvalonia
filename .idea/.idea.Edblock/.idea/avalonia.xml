@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Edblock.View/App.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/Components/MenuSymbols.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/SymbolsView/ActionSymbolView.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/SymbolsView/ConditionSymbolView.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/Views/MainWindow.axaml" value="Edblock.View/Edblock.View.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edblock.View", "Edblock.View\Edblock.View.csproj", "{422D792F-7829-41C0-9889-FADAA96A0B1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edblock.Model", "Edblock.Model\Edblock.Model.csproj", "{308DDAA4-2CA4-47A3-9235-343F2CFD173F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edblock.ViewModel", "Edblock.ViewModel\Edblock.ViewModel.csproj", "{7DC4167F-8499-4602-98C4-33808E574C83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{422D792F-7829-41C0-9889-FADAA96A0B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422D792F-7829-41C0-9889-FADAA96A0B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422D792F-7829-41C0-9889-FADAA96A0B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422D792F-7829-41C0-9889-FADAA96A0B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{308DDAA4-2CA4-47A3-9235-343F2CFD173F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{308DDAA4-2CA4-47A3-9235-343F2CFD173F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{308DDAA4-2CA4-47A3-9235-343F2CFD173F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{308DDAA4-2CA4-47A3-9235-343F2CFD173F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC4167F-8499-4602-98C4-33808E574C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC4167F-8499-4602-98C4-33808E574C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC4167F-8499-4602-98C4-33808E574C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC4167F-8499-4602-98C4-33808E574C83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal

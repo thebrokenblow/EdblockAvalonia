@@ -1,0 +1,15 @@
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\bin\Debug\net6.0\Edblock.ViewModel.deps.json
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\bin\Debug\net6.0\Edblock.ViewModel.dll
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\bin\Debug\net6.0\Edblock.ViewModel.pdb
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\bin\Debug\net6.0\Edblock.Model.dll
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\bin\Debug\net6.0\Edblock.Model.pdb
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\Edblock.ViewModel.csproj.AssemblyReference.cache
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\Edblock.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\Edblock.ViewModel.AssemblyInfoInputs.cache
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\Edblock.ViewModel.AssemblyInfo.cs
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\Edblock.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\Edblock..04730160.Up2Date
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\Edblock.ViewModel.dll
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\refint\Edblock.ViewModel.dll
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\Edblock.ViewModel.pdb
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\ref\Edblock.ViewModel.dll

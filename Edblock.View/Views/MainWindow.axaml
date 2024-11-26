@@ -1,0 +1,54 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:componentsVm="clr-namespace:Edblock.ViewModel.Components;assembly=Edblock.ViewModel"
+        xmlns:symbolsVm="clr-namespace:Edblock.ViewModel.SymbolsVM;assembly=Edblock.ViewModel"
+        xmlns:symbolsView="clr-namespace:Edblock.View.SymbolsView"
+        mc:Ignorable="d" 
+        d:DesignWidth="800" 
+        d:DesignHeight="450"
+        x:Class="Edblock.View.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Edblock">
+    
+    <Design.DataContext>
+        <componentsVm:EditorVm/>
+    </Design.DataContext>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Width="200" Background="#F5F5F5">
+            <Rectangle
+                Margin="0 20 0 0"
+                Width="140"
+                Height="60"
+                Fill="Aqua"
+                PointerPressed="InputElement_OnPointerPressed"/>
+        </StackPanel>
+        <ItemsControl Grid.Column="1" Items="{Binding Symbols}" PointerMoved="InputElement_OnPointerMoved">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Canvas Background="Transparent" PointerReleased="InputElement_OnPointerReleased"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.Styles>
+                <Style Selector="ItemsControl ContentPresenter">
+                    <Setter Property="Canvas.Left" Value="{Binding X}" />
+                    <Setter Property="Canvas.Top" Value="{Binding Y}" />
+                </Style>
+            </ItemsControl.Styles>
+            <ItemsControl.DataTemplates>
+                <DataTemplate DataType="{x:Type symbolsVm:ActionSymbolVm}">
+                    <symbolsView:ActionSymbolView PointerPressed="SelectSymbolHandler"/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type symbolsVm:ConditionSymbolVm}">
+                    <symbolsView:ConditionSymbolView PointerPressed="SelectSymbolHandler"/>
+                </DataTemplate>
+            </ItemsControl.DataTemplates>
+        </ItemsControl>
+    </Grid>
+</Window>
