@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Artem\\Desktop\\EdblockCrossPlatform\\Edblock\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{308DDAA4-2CA4-47A3-9235-343F2CFD173F}|Edblock.Model\\Edblock.Model.csproj|c:\\users\\artem\\desktop\\edblockcrossplatform\\edblock\\edblock.model\\edblock.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{308DDAA4-2CA4-47A3-9235-343F2CFD173F}|Edblock.Model\\Edblock.Model.csproj|solutionrelative:edblock.model\\edblock.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +27,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edblock.Model.csproj",
+              "DocumentMoniker": "C:\\Users\\Artem\\Desktop\\EdblockCrossPlatform\\Edblock\\Edblock.Model\\Edblock.Model.csproj",
+              "RelativeDocumentMoniker": "Edblock.Model\\Edblock.Model.csproj",
+              "ToolTip": "C:\\Users\\Artem\\Desktop\\EdblockCrossPlatform\\Edblock\\Edblock.Model\\Edblock.Model.csproj",
+              "RelativeToolTip": "Edblock.Model\\Edblock.Model.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-28T11:45:07.658Z",
+              "EditorCaption": ""
             }
           ]
         }

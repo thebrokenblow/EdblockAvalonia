@@ -13,3 +13,4 @@ C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\
 C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\refint\Edblock.ViewModel.dll
 C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\Edblock.ViewModel.pdb
 C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\ref\Edblock.ViewModel.dll
+C:\Users\Artem\Desktop\EdblockCrossPlatform\Edblock\Edblock.ViewModel\obj\Debug\net6.0\Edblock.ViewModel.sourcelink.json

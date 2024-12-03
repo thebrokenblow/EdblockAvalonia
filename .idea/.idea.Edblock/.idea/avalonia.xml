@@ -4,7 +4,17 @@
     <option name="projectPerEditor">
       <map>
         <entry key="Edblock.View/App.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/Components/DragableSymbolsUi/DragableActionSymbolUi.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/Components/DragableSymbolsUi/DragableConditionSymbolUi.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/Components/DraggableSymbolsUi/DraggableActionSymbolUi.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/Components/DraggableSymbolsUi/DraggableConditionSymbolUi.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/Components/MenuDragableSymbolUi.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/Components/MenuDraggableSymbolUi.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/Components/MenuGhostSymbolUi.axaml" value="Edblock.View/Edblock.View.csproj" />
         <entry key="Edblock.View/Components/MenuSymbols.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/Components/MenuSymbolsUi.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/Components/SymbolsUi/ActionSymbolUi.axaml" value="Edblock.View/Edblock.View.csproj" />
+        <entry key="Edblock.View/Components/SymbolsUi/ConditionSymbolUi.axaml" value="Edblock.View/Edblock.View.csproj" />
         <entry key="Edblock.View/SymbolsView/ActionSymbolView.axaml" value="Edblock.View/Edblock.View.csproj" />
         <entry key="Edblock.View/SymbolsView/ConditionSymbolView.axaml" value="Edblock.View/Edblock.View.csproj" />
         <entry key="Edblock.View/Views/MainWindow.axaml" value="Edblock.View/Edblock.View.csproj" />

@@ -10,7 +10,7 @@
     </Design.DataContext>
     
     <Rectangle
+        Fill="{Binding Background}"
         Width="{Binding Width}"
-        Height="{Binding Height}"
-        Fill="Aqua" />
+        Height="{Binding Height}" />
 </UserControl>

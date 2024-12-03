@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ICcJXGa1ewU=",
+  "dgSpecHash": "LZDpu+m1ePM=",
   "success": true,
   "projectFilePath": "C:\\Users\\Artem\\Desktop\\EdblockCrossPlatform\\Edblock\\Edblock.Model\\Edblock.Model.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Artem\\.nuget\\packages\\google.protobuf\\3.29.0-rc3\\google.protobuf.3.29.0-rc3.nupkg.sha512",
+    "C:\\Users\\Artem\\.nuget\\packages\\grpc.core.api\\2.67.0\\grpc.core.api.2.67.0.nupkg.sha512",
+    "C:\\Users\\Artem\\.nuget\\packages\\grpc.net.client\\2.67.0\\grpc.net.client.2.67.0.nupkg.sha512",
+    "C:\\Users\\Artem\\.nuget\\packages\\grpc.net.common\\2.67.0\\grpc.net.common.2.67.0.nupkg.sha512",
+    "C:\\Users\\Artem\\.nuget\\packages\\grpc.tools\\2.67.0\\grpc.tools.2.67.0.nupkg.sha512",
+    "C:\\Users\\Artem\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

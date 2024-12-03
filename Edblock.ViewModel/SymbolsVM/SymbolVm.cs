@@ -1,39 +1,24 @@
-﻿using System.ComponentModel;
-using System.Runtime.CompilerServices;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Edblock.Model;
 using Edblock.ViewModel.Components;
 
 namespace Edblock.ViewModel.SymbolsVM;
 
-public abstract class SymbolVm : INotifyPropertyChanged
+public abstract partial class SymbolVm : ObservableObject
 {
     public string Id { get; set; }
     public string Name { get; set; }
-    private double _x;
+    
+    [ObservableProperty] private double _x;
+    
+    [ObservableProperty] private double _y;
 
-    public double X
-    {
-        get => _x;
-        set
-        {
-            _x = value;
-            OnPropertyChanged();
-        }
-    }
+    [ObservableProperty] private double _width;
+        
+    [ObservableProperty] private double _height;
 
-    private double y;
-    public double Y
-    {
-        get => y;
-        set
-        {
-            y = value;
-            OnPropertyChanged();
-        }
-    }
-    public double Width { get; set; }
-    public double Height { get; set; }
-    public string Background { get; set; }
+    [ObservableProperty] private string _background;
+    
     protected readonly SymbolModel _symbolModel;
     protected readonly EditorVm _editorVm;
 
@@ -58,11 +43,13 @@ public abstract class SymbolVm : INotifyPropertyChanged
     {
         _editorVm.SelectedSymbol = this;
     }
-    
-    public event PropertyChangedEventHandler? PropertyChanged;
 
-    private void OnPropertyChanged([CallerMemberName]string propertyName = "")
+    public void ChangeCoordinate(double x, double y)
     {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        X = x;
+        Y = y;
+
+        _symbolModel.X = x;
+        _symbolModel.Y = y;
     }
 }

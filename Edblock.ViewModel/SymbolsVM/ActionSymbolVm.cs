@@ -9,7 +9,7 @@ public class ActionSymbolVm : SymbolVm
 
     public ActionSymbolVm(EditorVm editorVm) : base(editorVm)
     {
-        Background = "Aqua";
+        Background = "#FF52C0AA";
         Width = DefaultWidth;
         Height = DefaultHeight;
     }

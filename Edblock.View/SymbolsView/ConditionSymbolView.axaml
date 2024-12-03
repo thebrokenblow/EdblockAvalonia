@@ -9,8 +9,13 @@
         <symbolsVm:ConditionSymbolVm/>
     </Design.DataContext>
     
-    <Polygon
-        Width="{Binding Width}"
-        Height="{Binding Height}"
-        Fill="{Binding Background}" />
+    <Canvas 
+        Background="Transparent" 
+        Width="{Binding Width}" 
+        Height="{Binding Height}">
+        <Polygon Width="{Binding Width}"
+                 Height="{Binding Height}"
+                 Fill="{Binding Background}" 
+                 Points="{Binding Points}" />
+    </Canvas>
 </UserControl>

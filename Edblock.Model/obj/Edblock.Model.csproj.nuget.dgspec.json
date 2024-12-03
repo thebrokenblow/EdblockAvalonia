@@ -49,6 +49,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.29.0-rc3, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.67.0, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.67.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

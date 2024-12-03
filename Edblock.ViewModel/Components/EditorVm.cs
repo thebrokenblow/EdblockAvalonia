@@ -1,36 +1,55 @@
 ﻿using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.ComponentModel;
+using Edblock.Model;
+using Edblock.Model.Factories;
+using Edblock.ViewModel.Core;
 using Edblock.ViewModel.SymbolsVM;
 
 namespace Edblock.ViewModel.Components;
 
-public class EditorVm
+public partial class EditorVm : ObservableObject
 {
     public SymbolVm? SelectedSymbol { get; set; }
-    public ObservableCollection<SymbolVm> Symbols { get; set; } = new();
-    public EditorVm()
+    private readonly ProjectService _projectService = new();
+    
+    [ObservableProperty]
+    private ObservableCollection<SymbolVm>? _symbols = [];
+
+    private readonly Mapper _mapper;
+    public EditorVm(Mapper mapper)
     {
-        var symbol1 = new ActionSymbolVm(this)
+        _mapper = mapper;
+
+        _symbols.Add(new ActionSymbolVm(this)
         {
             X = 100,
-            Y = 100
-        };
-
-        var symbol2 = new ActionSymbolVm(this)
-        {
-            X = 500,
-            Y = 500
-        };
+            Y = 200,
+        });
         
-        Symbols.Add(symbol1);
-        Symbols.Add(symbol2);
+        _symbols.Add(new ActionSymbolVm(this)
+        {
+            X = 200,
+            Y = 400,
+        });
+        
+        _symbols.Add(new ConditionSymbolVm(this)
+        {
+            X = 100,
+            Y = 100,
+        });
     }
 
+    private async Task GetSymbolsAsync()
+    {
+        var responseSymbols = await _projectService.GetAsync();
+        var mapperProject = new MapperProject(new FactorySymbolModel());
+        var symbolModels = mapperProject.MapProject(responseSymbols);
+        Symbols = new ObservableCollection<SymbolVm>(_mapper.Map(symbolModels));
+    }
+    
     public void ChangeCoordinateSelectedSymbol(double x, double y)
     {
-        if (SelectedSymbol is null) return;
-        
-        SelectedSymbol.X = x;
-        SelectedSymbol.Y = y;
+        SelectedSymbol?.ChangeCoordinate(x, y);
     }
 
     public void RemoveSelectedSymbol()
@@ -40,13 +59,9 @@ public class EditorVm
 
     public void CreateActionSymbol()
     {
-        var symbol = new ActionSymbolVm(this)
-        {
-            X = 0,
-            Y = 0
-        };
+        var symbol = new ActionSymbolVm(this);
 
         SelectedSymbol = symbol;
-        Symbols.Add(symbol);
+        Symbols?.Add(symbol);
     }
 }

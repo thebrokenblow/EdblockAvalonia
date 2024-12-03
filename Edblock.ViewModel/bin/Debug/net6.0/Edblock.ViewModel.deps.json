@@ -8,13 +8,218 @@
     ".NETCoreApp,Version=v6.0": {
       "Edblock.ViewModel/1.0.0": {
         "dependencies": {
-          "Edblock.Model": "1.0.0"
+          "Avalonia": "0.10.18",
+          "CommunityToolkit.Mvvm": "8.3.2",
+          "Edblock.Model": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "9.0.0"
         },
         "runtime": {
           "Edblock.ViewModel.dll": {}
         }
       },
+      "Avalonia/0.10.18": {
+        "dependencies": {
+          "Avalonia.Remote.Protocol": "0.10.18",
+          "JetBrains.Annotations": "10.3.0",
+          "System.ComponentModel.Annotations": "4.5.0",
+          "System.Memory": "4.5.3",
+          "System.Reactive": "5.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/Avalonia.Animation.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.Base.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.Controls.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.DesignerSupport.dll": {
+            "assemblyVersion": "0.7.0.0",
+            "fileVersion": "0.7.0.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.DesktopRuntime.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.Dialogs.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.Input.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.Interactivity.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.Layout.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.Markup.Xaml.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.Markup.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.MicroCom.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.OpenGL.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.Styling.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.Themes.Default.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.Themes.Fluent.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.Visuals.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          },
+          "lib/netcoreapp2.0/Avalonia.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          }
+        }
+      },
+      "Avalonia.Remote.Protocol/0.10.18": {
+        "runtime": {
+          "lib/netstandard2.0/Avalonia.Remote.Protocol.dll": {
+            "assemblyVersion": "0.10.18.0",
+            "fileVersion": "0.10.18.0"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.3.2": {
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "assemblyVersion": "8.3.0.0",
+            "fileVersion": "8.3.2.1"
+          }
+        }
+      },
+      "Google.Protobuf/3.29.0-rc3": {
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.29.0.0",
+            "fileVersion": "3.29.0.0"
+          }
+        }
+      },
+      "Grpc.Core.Api/2.67.0": {
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.67.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Client/2.67.0": {
+        "dependencies": {
+          "Grpc.Net.Common": "2.67.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Grpc.Net.Client.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.67.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Common/2.67.0": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.67.0"
+        },
+        "runtime": {
+          "lib/net6.0/Grpc.Net.Common.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.67.0.0"
+          }
+        }
+      },
+      "JetBrains.Annotations/10.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.0/JetBrains.Annotations.dll": {
+            "assemblyVersion": "10.3.0.0",
+            "fileVersion": "10.3.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/9.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52809"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52809"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.0.1": {},
+      "Microsoft.NETCore.Targets/1.0.1": {},
+      "System.ComponentModel.Annotations/4.5.0": {},
+      "System.Memory/4.5.3": {},
+      "System.Reactive/5.0.0": {
+        "runtime": {
+          "lib/net5.0/System.Reactive.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.1"
+          }
+        }
+      },
+      "System.Runtime/4.1.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1"
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.6.0": {},
+      "System.ValueTuple/4.5.0": {},
       "Edblock.Model/1.0.0": {
+        "dependencies": {
+          "Google.Protobuf": "3.29.0-rc3",
+          "Grpc.Net.Client": "2.67.0"
+        },
         "runtime": {
           "Edblock.Model.dll": {
             "assemblyVersion": "1.0.0",
@@ -29,6 +234,139 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Avalonia/0.10.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hA7US1I75f+ztOyqFWXdzkyJDU9FxcMktfmnmey2uPb+9Cn2GSTU+/7t08CMAyMxuCBpWjlOwkdCZh1cPFWHpg==",
+      "path": "avalonia/0.10.18",
+      "hashPath": "avalonia.0.10.18.nupkg.sha512"
+    },
+    "Avalonia.Remote.Protocol/0.10.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YRymqWJWBDTM+o1CRs5ymAXQpd26erystkyavPgk10bWR4o3D657yFp0oCdfJek2Eba+agazcbZEmB8rdO8eiA==",
+      "path": "avalonia.remote.protocol/0.10.18",
+      "hashPath": "avalonia.remote.protocol.0.10.18.nupkg.sha512"
+    },
+    "CommunityToolkit.Mvvm/8.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m8EolE1A0Updj68WTsZSGI6VWb6mUqHPh7QFo0kt7+JPhYMNXRS1ch8TS/oITAdcxTLrwMOp3ku1KjeG1/Zdpg==",
+      "path": "communitytoolkit.mvvm/8.3.2",
+      "hashPath": "communitytoolkit.mvvm.8.3.2.nupkg.sha512"
+    },
+    "Google.Protobuf/3.29.0-rc3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9pVworlUOgVcBSYOa41cQpUd/TnXU635sHQZeUoEvdaooZb4QGaQAEbqz/g7lEmyrB0kAzTvUhb2wy12j79awQ==",
+      "path": "google.protobuf/3.29.0-rc3",
+      "hashPath": "google.protobuf.3.29.0-rc3.nupkg.sha512"
+    },
+    "Grpc.Core.Api/2.67.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cL1/2f8kc8lsAGNdfCU25deedXVehhLA6GXKLLN4hAWx16XN7BmjYn3gFU+FBpir5yJynvDTHEypr3Tl0j7x/Q==",
+      "path": "grpc.core.api/2.67.0",
+      "hashPath": "grpc.core.api.2.67.0.nupkg.sha512"
+    },
+    "Grpc.Net.Client/2.67.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ofTjJQfegWkVlk5R4k/LlwpcucpsBzntygd4iAeuKd/eLMkmBWoXN+xcjYJ5IibAahRpIJU461jABZvT6E9dwA==",
+      "path": "grpc.net.client/2.67.0",
+      "hashPath": "grpc.net.client.2.67.0.nupkg.sha512"
+    },
+    "Grpc.Net.Common/2.67.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gazn1cD2Eol0/W5ZJRV4PYbNrxJ9oMs8pGYux5S9E4MymClvl7aqYSmpqgmWAUWvziRqK9K+yt3cjCMfQ3x/5A==",
+      "path": "grpc.net.common/2.67.0",
+      "hashPath": "grpc.net.common.2.67.0.nupkg.sha512"
+    },
+    "JetBrains.Annotations/10.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0GLU9lwGVXjUNlr9ZIdAgjqLI2Zm/XFGJFaqJ1T1sU+kwfeMLhm68+rblUrNUP9psRl4i8yM7Ghb4ia4oI2E5g==",
+      "path": "jetbrains.annotations/10.3.0",
+      "hashPath": "jetbrains.annotations.10.3.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MCPrg7v3QgNMr0vX4vzRXvkNGgLg8vKWX0nKCWUxu2uPyMsaRgiRc1tHBnbTcfJMhMKj2slE/j2M9oGkd25DNw==",
+      "path": "microsoft.extensions.dependencyinjection/9.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+6f2qv2a3dLwd5w6JanPIPs47CxRbnk+ZocMJUhv9NxP88VlOcJYZs9jY+MYSjxvady08bUZn6qgiNh7DadGgg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/HggWBbTwy8TgebGSX5DBZ24ndhzi93sHUBDvP1IxbZD7FDokYzdAr6+vbWGjw2XAfR2EJ1sfKUotpjHnFWPxA==",
+      "path": "microsoft.extensions.logging.abstractions/6.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2G6OjjJzwBfNOO8myRV/nFrbTw5iA+DEm0N+qUqhrOmaVtn4pC77h38I1jsXGw5VH55+dPfQsqHD0We9sCl9FQ==",
+      "path": "microsoft.netcore.platforms/1.0.1",
+      "hashPath": "microsoft.netcore.platforms.1.0.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rkn+fKobF/cbWfnnfBOQHKVKIOpxMZBvlSHkqDWgBpwGDcLRduvs3D9OLGeV6GWGvVwNlVi2CBbTjuPmtHvyNw==",
+      "path": "microsoft.netcore.targets/1.0.1",
+      "hashPath": "microsoft.netcore.targets.1.0.1.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==",
+      "path": "system.componentmodel.annotations/4.5.0",
+      "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "System.Reactive/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
+      "path": "system.reactive/5.0.0",
+      "hashPath": "system.reactive.5.0.0.nupkg.sha512"
+    },
+    "System.Runtime/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v6c/4Yaa9uWsq+JMhnOFewrYkgdNHNG2eMKuNqRn8P733rNXeRCGvV5FkkjBXn2dbVkPXOsO0xjsEeM1q2zC0g==",
+      "path": "system.runtime/4.1.0",
+      "hashPath": "system.runtime.4.1.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+    },
+    "System.ValueTuple/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
     },
     "Edblock.Model/1.0.0": {
       "type": "project",

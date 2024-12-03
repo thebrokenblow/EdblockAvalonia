@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+option csharp_namespace = "EdblockClient";
+ 
+package edblock;
+ 
+message RequestSymbol{ 
+    string Id = 1;
+    double X = 2;
+    double Y = 3;
+}
+ 
+message ResponseSymbol{ 
+    string Id = 1;
+    double X = 2;
+    double Y = 3;
+}
+
+message RequestUnsubscribeStream {
+     string IdClient = 1;
+}
+
+message ResponseUnsubscribeStream {
+}
+
+service EdblockEditor{
+  rpc ProjectStream (stream RequestSymbol) returns (stream ResponseSymbol);
+  rpc UnsubscribeStream (RequestUnsubscribeStream) returns (ResponseUnsubscribeStream);
+}
+
+service Project {
+  rpc Get (ProjectRequest) returns (ProjectReply);
+}
+ 
+message ProjectRequest {
+  string IdProject = 1;
+}
+ 
+message ProjectReply {
+  repeated ResponseSymbol ResponseSymbols = 1;
+}

@@ -5,10 +5,12 @@
         xmlns:componentsVm="clr-namespace:Edblock.ViewModel.Components;assembly=Edblock.ViewModel"
         xmlns:symbolsVm="clr-namespace:Edblock.ViewModel.SymbolsVM;assembly=Edblock.ViewModel"
         xmlns:symbolsView="clr-namespace:Edblock.View.SymbolsView"
+        xmlns:components="clr-namespace:Edblock.View.Components"
         mc:Ignorable="d" 
         d:DesignWidth="800" 
         d:DesignHeight="450"
         x:Class="Edblock.View.Views.MainWindow"
+        x:DataType="componentsVm:EditorVm"
         Icon="/Assets/avalonia-logo.ico"
         Title="Edblock">
     
@@ -16,23 +18,18 @@
         <componentsVm:EditorVm/>
     </Design.DataContext>
     
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0" Width="200" Background="#F5F5F5">
-            <Rectangle
-                Margin="0 20 0 0"
-                Width="140"
-                Height="60"
-                Fill="Aqua"
-                PointerPressed="InputElement_OnPointerPressed"/>
-        </StackPanel>
-        <ItemsControl Grid.Column="1" Items="{Binding Symbols}" PointerMoved="InputElement_OnPointerMoved">
+    <Grid DragDrop.AllowDrop="True" ColumnDefinitions="200,*">
+        <components:MenuSymbolsUi Name="MenuSymbols" Grid.Column="0"/>
+        <ItemsControl  
+            Grid.Column="1" 
+            Items="{Binding Symbols}"
+            PointerMoved="InputElement_OnPointerMoved">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <Canvas Background="Transparent" PointerReleased="InputElement_OnPointerReleased"/>
+                    <Canvas 
+                        Name="CanvasSymbols" 
+                        Background="Transparent" 
+                        PointerReleased="InputElement_OnPointerReleased"/>
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
             <ItemsControl.Styles>
@@ -50,5 +47,14 @@
                 </DataTemplate>
             </ItemsControl.DataTemplates>
         </ItemsControl>
+        
+        <Rectangle 
+            Name="GhostItem"
+            IsVisible="False"
+            Width="140" 
+            Height="60" 
+            Fill="#FF52C0AA"/>
+        
+        <components:MenuDraggableSymbolUi Name="MenuDraggableSymbolUi" Grid.Column="0"/>
     </Grid>
 </Window>
