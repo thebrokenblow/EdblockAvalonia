@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Avalonia.Controls;
 using Avalonia.Controls.Shapes;
 using Edblock.View.Components;
 
@@ -13,7 +14,7 @@ public class ConfigurationDraggableSymbolUi
         _menuDraggableSymbolUi = menuDraggableSymbolUi;
     }
 
-    public Dictionary<string, Shape> Сonfigure() =>
+    public Dictionary<string, Control> Сonfigure() =>
         new()
         {
             { _menuDraggableSymbolUi.DraggableActionSymbolUi.ActionSymbol.Name!, _menuDraggableSymbolUi.DraggableActionSymbolUi.ActionSymbol },

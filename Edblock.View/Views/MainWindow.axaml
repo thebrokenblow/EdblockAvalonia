@@ -17,7 +17,6 @@
     <Design.DataContext>
         <componentsVm:EditorVm/>
     </Design.DataContext>
-    
     <Grid DragDrop.AllowDrop="True" ColumnDefinitions="200,*">
         <components:MenuSymbolsUi Name="MenuSymbols" Grid.Column="0"/>
         <ItemsControl  
@@ -48,13 +47,24 @@
             </ItemsControl.DataTemplates>
         </ItemsControl>
         
-        <Rectangle 
-            Name="GhostItem"
-            IsVisible="False"
-            Width="140" 
-            Height="60" 
-            Fill="#FF52C0AA"/>
-        
-        <components:MenuDraggableSymbolUi Name="MenuDraggableSymbolUi" Grid.Column="0"/>
+        <components:MenuDraggableSymbolUi Name="MenuDraggableSymbolUi" Grid.Column="0" />
+        <StackPanel Grid.Column="0" >
+            <Canvas
+                Background="Transparent"
+                IsVisible="False"
+                Name="ConditionSymbol">
+                <Polygon
+                    Width="140"
+                    Height="60"
+                    Fill="#FF60B2D3" 
+                    Points="70 60 140 30 70 0 0 30"/>
+            </Canvas>
+            <Rectangle
+                Name="ActionSymbol"
+                IsVisible="False"
+                Width="140"
+                Height="60" 
+                Fill="#FF52C0AA"/>
+        </StackPanel>
     </Grid>
 </Window>

@@ -5,9 +5,10 @@
              mc:Ignorable="d"
              x:Class="Edblock.View.Components.DraggableSymbolsUi.DraggableConditionSymbolUi">
     <Canvas
-        IsVisible="False">
+        Background="Transparent"
+        IsVisible="False"
+        Name="ConditionSymbol">
         <Polygon
-            Name="ConditionSymbol" 
             Width="140"
             Height="60"
             Fill="#FF60B2D3" 

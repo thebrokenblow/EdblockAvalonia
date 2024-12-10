@@ -4,9 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:dragableSymbolsUi="clr-namespace:Edblock.View.Components.DraggableSymbolsUi"
              mc:Ignorable="d"
+             d:DesignWidth="800" 
+             d:DesignHeight="450"
              x:Class="Edblock.View.Components.MenuDraggableSymbolUi">
-    <Grid>
+    <StackPanel>
         <dragableSymbolsUi:DraggableActionSymbolUi Name="DraggableActionSymbolUi "/>
         <dragableSymbolsUi:DraggableConditionSymbolUi Name="DraggableConditionSymbolUi"/>
-    </Grid>
+    </StackPanel>
 </UserControl>
